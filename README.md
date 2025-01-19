@@ -1,15 +1,30 @@
-# google-maps-offline-sms
+# Google Maps Offline SMS
 
-nodejs, axios, twilio sms, twilio sls service/fns, gcp, gmaps, directions api
+A Node.js-based service that allows users to request Google Maps directions via SMS using Twilio.
 
-twilio functions&assets
-protected sls service
-axios dependency
+# Tech Stack
 
-twilio phone number
-messaging config
-service, env, fn path to sls service
-(can reattempt with service endpoint as webhook retry on primary fail)
+Node.js
+Axios (HTTP requests)
+Twilio SMS (messaging service)
+Twilio Serverless Functions (backend logic)
+Google Cloud Platform (GCP)
+Google Maps Directions API
 
-gcp google maps platform
-directions api
+# Features
+
+Receive 2-way directions via SMS through a Twilio phone number.
+Serverless architecture using Twilio Functions.
+Secure API requests with an Axios-based service.
+Supports webhook retries on primary failure.
+
+# Configuration
+
+Twilio: Phone number, messaging configuration, and Twilio Serverless environment setup.
+Google Maps Platform: API key with access to the Directions API.
+
+# Setup
+1. Clone repo
+2. Setup accounts (if you don't already have) on Twilio, GCP Platform.
+3. Import twilio function into the SMS service.
+4. Enter all keys and deploy.
